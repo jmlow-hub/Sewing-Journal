@@ -1,0 +1,19 @@
+.numberInput {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.numberInput h3 {
+  margin: 5px;
+}
+.numberInput__row {
+  display: flex;
+}
+.numberInput__row label {
+  padding: 5px;
+}
+.numberInput__row input {
+  width: 50px;
+  border-radius: 20px;
+  padding: 10px;
+}

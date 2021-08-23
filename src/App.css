@@ -1,0 +1,11 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+.app h1 {
+  color: red;
+}
+.app .appMain {
+  width: 100vw;
+  display: flex;
+}

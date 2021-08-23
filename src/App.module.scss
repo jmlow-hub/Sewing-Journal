@@ -1,0 +1,26 @@
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+
+    h1 {
+      height: 15vh;
+    }
+
+  
+  .appMain {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    &__nav {
+      width: 20%;
+    }
+
+    &__display {
+      width: 80%;
+    }
+  }
+    
+}

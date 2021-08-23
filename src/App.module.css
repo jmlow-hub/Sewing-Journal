@@ -1,0 +1,18 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+.app h1 {
+  height: 15vh;
+}
+.app .appMain {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.app .appMain__nav {
+  width: 20%;
+}
+.app .appMain__display {
+  width: 80%;
+}
