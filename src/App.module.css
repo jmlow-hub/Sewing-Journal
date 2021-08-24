@@ -15,4 +15,6 @@
 }
 .app .appMain__display {
   width: 80%;
+  display: flex;
+  justify-content: center;
 }

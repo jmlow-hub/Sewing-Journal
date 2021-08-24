@@ -6,7 +6,7 @@ const CalendarInput = () => {
 
 
   return (
-    <div className={styles.CalendarInput}>
+    <div className={styles.calendarInput}>
       <label htmlFor="date">Date</label>
       <input type="date" id="date" />
       

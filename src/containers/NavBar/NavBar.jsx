@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <div>
       <ul>
-        <li>Update journal</li>
+        <li>Add a new make</li>
         <li>Review wardrobe</li>
       </ul>
       

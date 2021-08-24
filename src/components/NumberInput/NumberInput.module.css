@@ -9,11 +9,11 @@
 .numberInput__row {
   display: flex;
 }
-.numberInput__row label {
-  padding: 5px;
-}
-.numberInput__row input {
-  width: 50px;
+.numberInput input {
+  width: 60px;
   border-radius: 20px;
   padding: 10px;
+}
+.numberInput label {
+  margin-right: 5px;
 }

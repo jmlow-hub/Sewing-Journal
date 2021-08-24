@@ -10,18 +10,17 @@
 
   &__row {
     display: flex;
-
-    label {
-      padding: 5px;  
-    }
-    
-    input {
-      width: 60px;
-      border-radius: 20px;
-      padding: 10px;
-      }
-
+  
   }
 
+  input {
+    width: 60px;
+    border-radius: 20px;
+    padding: 10px;    
+  }
   
+}
+
+label {
+  margin-right: 5px;
 }

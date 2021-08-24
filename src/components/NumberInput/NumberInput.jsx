@@ -8,7 +8,7 @@ const NumberInput = () => {
 
     <div className={styles.numberInput}>
       <h3>Measurements</h3>
-      <div classname={StyleSheet.numberInput__row}>
+      <div classname={styles.numberInputRow}>
         <label htmlFor="bust">Bust</label>
         <input type="text" id="bust" name="bust" placeholder="in" />
         <label htmlFor="waist" >Waist</label>
