@@ -22,15 +22,33 @@ const JournalPage = () => {
     notes: ""
   })
 
+
+  const postOptions = {
+    method: 'POST',
+    headers: {"Content-type":"application/*+json"},
+    body: journalEntry
+  };
+
   const handleNewEntry = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:8080/make", POST  )
+    fetch("http://localhost:8080/make", postOptions  
+     )
+    .then(response => response.json())
+    .then(response => {
+      console.log(response)
+    })
+    .catch(error => {
+      console.log(error)
+    })
+
+  }
+  
 
 
 
     
-  }
+  
 
  
 
