@@ -1,0 +1,66 @@
+.journalPage {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.journalPage .calendarInput {
+  margin: 0px 5px 0px 10px;
+  align-self: flex-start;
+}
+.journalPage .calendarInput input {
+  border-radius: 20px;
+  padding: 5px;
+}
+.journalPage .textInput {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.journalPage .textInput h3 {
+  margin: 5px;
+}
+.journalPage .textInput label {
+  padding: 5px;
+}
+.journalPage .textInput input {
+  width: 300px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.journalPage .numberInput {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.journalPage .numberInput h3 {
+  margin: 5px;
+}
+.journalPage .numberInput__row {
+  display: flex;
+}
+.journalPage .numberInput input {
+  width: 60px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.journalPage label {
+  margin-right: 5px;
+}
+.journalPage .textArea {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.journalPage label {
+  margin-left: 10px;
+}
+.journalPage textarea {
+  border-radius: 20px;
+}
+.journalPage button {
+  width: 200px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+}

@@ -8,13 +8,13 @@
 .app .appMain {
   width: 100vw;
   display: flex;
-  justify-content: center;
 }
 .app .appMain__nav {
-  width: 20%;
+  width: 250px;
 }
 .app .appMain__display {
-  width: 80%;
+  width: 75%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }

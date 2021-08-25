@@ -1,11 +1,9 @@
-
 .navBar {
   width: 100%;
   display: flex;
   justify-content: center;
-
-    ul {
-      display: flex;
-      flex-direction: column;
-    }
+}
+.navBar ul {
+  display: flex;
+  flex-direction: column;
 }
