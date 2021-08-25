@@ -8,16 +8,18 @@ import TextArea from '../../components/TextArea/';
 
 const JournalPage = () => {
   return (
-    <div className={styles.journalPage}>
+    
       
-
-      <CalendarInput />
-      <TextInput />
-      <NumberInput />
-      <TextArea />
-      <Button />
+      <form className={styles.journalPage}>
+        <CalendarInput />
+        <TextInput />
+        <NumberInput />
+        <TextArea />
+        <Button />
+      </form>
+     
       
-    </div>
+    
   )
 }
 
