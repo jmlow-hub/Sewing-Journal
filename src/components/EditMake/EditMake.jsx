@@ -3,12 +3,17 @@ import styles from "./EditMake.module.scss"
 
 const EditMake = (props) => {
 
-  const { journalEntry, setModal, setJournalEntry } = props
+  const { journalEntry, modal, setModal, setJournalEntry } = props
+
+  const handleModal = (e) => {
+    setModal(false)
+    // console.log(modal)
+  }
 
 
   return (
     <div>
-      <p>Close</p>
+      <p onClick={handleModal}>Close</p>
       <form className={styles.editMake} >
          <div className={styles.calendarInput}>
           <label htmlFor="date">Date</label>

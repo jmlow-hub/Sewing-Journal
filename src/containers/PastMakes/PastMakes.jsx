@@ -65,8 +65,9 @@ const PastMakes = (props) => {
 
     return (
     <div className={styles.pastMakes}>
+      {makeCard}
       
-      {modal ? <EditMake setModal={setModal} journalEntry={journalEntry}/> : {makeCard}}
+      {modal && <EditMake setModal={setModal} journalEntry={journalEntry} />} 
       
     </div>
   )
