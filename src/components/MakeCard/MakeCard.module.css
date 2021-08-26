@@ -1,0 +1,41 @@
+.makeCard {
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+.makeCard__details {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+.makeCard__measures {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 10px;
+}
+.makeCard__notes {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 10px;
+}
+.makeCard__btns {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}

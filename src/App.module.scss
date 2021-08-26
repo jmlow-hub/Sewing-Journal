@@ -1,28 +1,32 @@
 
 
+
 .app {
   display: flex;
   flex-direction: column;
+  
+  
 
     h1 {
       height: 15vh;
-    }
+    } 
 
+    
+}
+
+.appMain {
+  width: 100vw;
+  display: flex;
+  background: transparent;
   
-  .appMain {
-    width: 100vw;
-    display: flex;
-    
-    &__nav {
-      width: 250px;
-    }
-
-    &__display {
-      width: 75%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+  &__nav {
+    width: 250px;
   }
-    
+
+  &__display {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

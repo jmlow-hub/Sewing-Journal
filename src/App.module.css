@@ -5,14 +5,16 @@
 .app h1 {
   height: 15vh;
 }
-.app .appMain {
+
+.appMain {
   width: 100vw;
   display: flex;
+  background: transparent;
 }
-.app .appMain__nav {
+.appMain__nav {
   width: 250px;
 }
-.app .appMain__display {
+.appMain__display {
   width: 75%;
   display: flex;
   flex-wrap: wrap;

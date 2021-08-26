@@ -6,11 +6,12 @@ import NavBar from "./containers/NavBar";
 import PastMakes from "./containers/PastMakes";
 import styles from "./App.module.scss";
 
+
 const App = () => {
 
     //state 
     const [ journalEntry, setJournalEntry ] = useState({
-      id: "",
+      // id: "",
       date: "",
       designer: "",
       pattern: "",
