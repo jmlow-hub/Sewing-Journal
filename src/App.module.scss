@@ -1,4 +1,4 @@
-
+@import "./variables";
 
 
 .app {
@@ -9,6 +9,10 @@
 
     h1 {
       height: 15vh;
+      font-family: $primary-font;
+      color: $primary-color;
+      font-size: 45px;
+      margin: 15px;
     } 
 
     

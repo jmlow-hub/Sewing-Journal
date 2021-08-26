@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+$primary-font: 'Open-Sans', sans-serif;
+$secondary-font: 'Lato', sans-serif;
+$primary-color: ghostwhite;
+
+@mixin button($width: 150px) {
+  width: $width;
+  background-color: $primary-color;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
+  font-family: $secondary-font;
+  font-weight: bold;
+
+}

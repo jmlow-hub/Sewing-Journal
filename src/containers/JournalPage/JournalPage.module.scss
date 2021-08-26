@@ -1,3 +1,4 @@
+@import "../../variables";
 
 .journalPage {
   width: 350px;
@@ -5,14 +6,28 @@
   flex-direction: column;
   align-items: center;
 
+  
   .calendarInput {
-    margin: 0px 5px 0px 10px;
-    align-self: flex-start;
+    margin: 10px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    
   
     input {
+      width: 300px;
+      border: none;
       border-radius: 20px;
       padding: 5px;
+      background-color: $primary-color;
+      font-family: $secondary-font;
     }
+
+    label {
+      padding: 5px;
+      font-family: $secondary-font;
+
+    }
+
   }
   
   .textInput {
@@ -22,20 +37,31 @@
 
     h3 {
       margin: 5px;
+      font-family: $primary-font;
     }
 
     label {
       padding: 5px;
+      font-family: $secondary-font;
 
     }
 
 
     input {
       width: 300px;
+      border: none;
       border-radius: 20px;
       padding: 10px;
+      font-family: $secondary-font;
 
     }
+
+    label {
+      padding: 5px;
+      font-family: $secondary-font;
+
+    }
+
   }
 
   .numberInput {
@@ -45,6 +71,7 @@
   
     h3 {
       margin: 5px;
+      font-family: $primary-font;
     }
   
     &__row {
@@ -53,17 +80,22 @@
     }
   
     input {
-      width: 60px;
+      width: 50px;
+      border: none;
       border-radius: 20px;
-      padding: 10px;    
+      padding: 10px;
+      font-family: $secondary-font;    
+    }
+
+    label {
+      padding: 5px;
+      font-family: $secondary-font;
+      margin-right: 5px;
     }
     
   }
   
-  label {
-    margin-right: 5px;
-  }
-
+ 
   .textArea {
     display: flex;
     flex-direction: column;
@@ -72,21 +104,21 @@
   }
   
   label {
-    
-    margin-left: 10px;
+    padding: 5px;
+    font-family: $secondary-font;
+    margin-right: 5px;
   }
   
   textarea {
     border-radius: 20px;
+    border: none;
+    font-family: $secondary-font;
   
   }
 
   
 button {
-  width: 200px;
-  padding: 10px;
-  border-radius: 20px;
-  background-color: white;
+  @include button($width: 150px)
 
 }
 

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap");
 .journalPage {
   width: 350px;
   display: flex;
@@ -5,12 +6,21 @@
   align-items: center;
 }
 .journalPage .calendarInput {
-  margin: 0px 5px 0px 10px;
-  align-self: flex-start;
+  margin: 10px 10px 0 10px;
+  display: flex;
+  flex-direction: column;
 }
 .journalPage .calendarInput input {
+  width: 300px;
+  border: none;
   border-radius: 20px;
   padding: 5px;
+  background-color: ghostwhite;
+  font-family: "Lato", sans-serif;
+}
+.journalPage .calendarInput label {
+  padding: 5px;
+  font-family: "Lato", sans-serif;
 }
 .journalPage .textInput {
   display: flex;
@@ -19,14 +29,22 @@
 }
 .journalPage .textInput h3 {
   margin: 5px;
+  font-family: "Open-Sans", sans-serif;
 }
 .journalPage .textInput label {
   padding: 5px;
+  font-family: "Lato", sans-serif;
 }
 .journalPage .textInput input {
   width: 300px;
+  border: none;
   border-radius: 20px;
   padding: 10px;
+  font-family: "Lato", sans-serif;
+}
+.journalPage .textInput label {
+  padding: 5px;
+  font-family: "Lato", sans-serif;
 }
 .journalPage .numberInput {
   display: flex;
@@ -35,16 +53,21 @@
 }
 .journalPage .numberInput h3 {
   margin: 5px;
+  font-family: "Open-Sans", sans-serif;
 }
 .journalPage .numberInput__row {
   display: flex;
 }
 .journalPage .numberInput input {
-  width: 60px;
+  width: 50px;
+  border: none;
   border-radius: 20px;
   padding: 10px;
+  font-family: "Lato", sans-serif;
 }
-.journalPage label {
+.journalPage .numberInput label {
+  padding: 5px;
+  font-family: "Lato", sans-serif;
   margin-right: 5px;
 }
 .journalPage .textArea {
@@ -53,14 +76,22 @@
   padding: 10px;
 }
 .journalPage label {
-  margin-left: 10px;
+  padding: 5px;
+  font-family: "Lato", sans-serif;
+  margin-right: 5px;
 }
 .journalPage textarea {
   border-radius: 20px;
+  border: none;
+  font-family: "Lato", sans-serif;
 }
 .journalPage button {
-  width: 200px;
+  width: 150px;
+  background-color: ghostwhite;
   padding: 10px;
+  border: none;
   border-radius: 20px;
-  background-color: white;
+  margin: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
 }
