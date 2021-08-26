@@ -11,7 +11,7 @@ const App = () => {
 
     //state 
     const [ journalEntry, setJournalEntry ] = useState({
-      // id: "",
+      id: "",
       date: "",
       designer: "",
       pattern: "",
@@ -50,7 +50,7 @@ const App = () => {
                 </Route>
 
                 <Route path="/pastmakes">
-                  <PastMakes /> 
+                  <PastMakes journalEntry={journalEntry} setJournalEntry={setJournalEntry} /> 
                 </Route>    
               </Switch>
           </div>

@@ -3,7 +3,13 @@ import styles from "./MakeCard.module.scss";
 
 const MakeCard = (props) => {
 
-  const { key, date, designer, pattern, style, size, bust, waist, hips, notes } = props
+  const { date, designer, pattern, style, size, bust, waist, hips, notes, id, clicked} = props
+
+ 
+    
+
+
+
 
   
   return (
@@ -26,7 +32,7 @@ const MakeCard = (props) => {
         <p>{notes}</p>
       </div>
       <div className={styles.makeCard__btns}>
-        <button>Edit</button>
+        <button id={id} onClick={clicked}>Edit</button>
         <button>Delete</button>        
       </div>
     </div>

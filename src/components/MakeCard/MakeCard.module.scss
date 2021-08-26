@@ -5,7 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 1px solid;
+  border: 5px solid $primary-color;
   border-radius: 20px;
   padding: 20px;
   margin: 20px;
@@ -13,36 +13,60 @@
     &__details {
       display: flex;
       flex-direction: column;
-      border: 1px solid;
+      justify-content: space-evenly;
       border-radius: 20px;
       padding: 10px;
       margin: 10px;
+      background-color: $primary-color;
+
+      p {
+        font-family: $secondary-font;
+      }
     }
 
     &__measures {
       display: flex;
       flex-direction: column;
-      margin: 10px;
-      border: 1px solid;
+      justify-content: space-evenly;
       border-radius: 20px;
       padding: 10px;
+      margin: 10px;
+      background-color: $primary-color;
+
+      p {
+        font-family: $secondary-font;
+      }
     }
 
     &__notes {
       width: 300px;
       display: flex;
-      flex-direction: column;      
-      margin: 10px;
-      border: 1px solid;
+      flex-direction: column;
+      justify-content: space-evenly;
       border-radius: 20px;
       padding: 10px;
+      margin: 10px;
+      background-color: $primary-color;
+
+      p {
+        font-family: $secondary-font;
+      }
     }
 
     &__btns {
       display: flex;
       flex-direction: column;
+      justify-content: space-evenly;
       margin: 10px;
       padding: 10px;
+
+        button {
+          width: 65px;
+          height: 65px;
+          border-radius: 50%;
+          border: none;
+          background-color: $primary-color;
+        }
     }
     }
     

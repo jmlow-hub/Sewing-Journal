@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 1px solid;
+  border: 5px solid ghostwhite;
   border-radius: 20px;
   padding: 20px;
   margin: 20px;
@@ -12,31 +12,51 @@
 .makeCard__details {
   display: flex;
   flex-direction: column;
-  border: 1px solid;
+  justify-content: space-evenly;
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
+  background-color: ghostwhite;
+}
+.makeCard__details p {
+  font-family: "Lato", sans-serif;
 }
 .makeCard__measures {
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  border: 1px solid;
+  justify-content: space-evenly;
   border-radius: 20px;
   padding: 10px;
+  margin: 10px;
+  background-color: ghostwhite;
+}
+.makeCard__measures p {
+  font-family: "Lato", sans-serif;
 }
 .makeCard__notes {
   width: 300px;
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  border: 1px solid;
+  justify-content: space-evenly;
   border-radius: 20px;
   padding: 10px;
+  margin: 10px;
+  background-color: ghostwhite;
+}
+.makeCard__notes p {
+  font-family: "Lato", sans-serif;
 }
 .makeCard__btns {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   margin: 10px;
   padding: 10px;
+}
+.makeCard__btns button {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  background-color: ghostwhite;
 }
