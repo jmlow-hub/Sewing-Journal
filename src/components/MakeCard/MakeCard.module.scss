@@ -1,16 +1,17 @@
 @import "../../variables";
 
 .makeCard {
-  height: 300px;
+  min-width: 350px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border: 5px solid $primary-color;
   border-radius: 20px;
   padding: 20px;
   margin: 20px;
 
     &__details {
+      width: 200px;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -25,6 +26,7 @@
     }
 
     &__measures {
+      width: 175px;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -56,17 +58,53 @@
     &__btns {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: space-between;
       margin: 10px;
       padding: 10px;
 
         button {
-          width: 65px;
-          height: 65px;
+          width: 45px;
+          height: 45px;
           border-radius: 50%;
           border: none;
           background-color: $primary-color;
+          font-family: $secondary-font;
+          
         }
     }
     }
+
+    @media screen and (max-width: 1024px) {
+        .makeCard {
+
+        &__btns {
+          
+          align-items: center;
+          
+
+      }
+    }
+  }
+
+  @media  screen and (max-width: 500px) { 
+    .makeCard {
+      width: 325px;
+
+      &__details {
+        width: 300px;
+      }
+
+      &__measures {
+        width: 300px;
+      }
+
+      
     
+
+      &__buttons {
+        flex-direction: row;
+      }
+
+    }
+    
+  }

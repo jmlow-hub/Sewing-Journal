@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap");
 .makeCard {
-  height: 300px;
+  min-width: 350px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border: 5px solid ghostwhite;
   border-radius: 20px;
   padding: 20px;
   margin: 20px;
 }
 .makeCard__details {
+  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -22,6 +23,7 @@
   font-family: "Lato", sans-serif;
 }
 .makeCard__measures {
+  width: 175px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -49,14 +51,35 @@
 .makeCard__btns {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 10px;
   padding: 10px;
 }
 .makeCard__btns button {
-  width: 65px;
-  height: 65px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   border: none;
   background-color: ghostwhite;
+  font-family: "Lato", sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  .makeCard__btns {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .makeCard {
+    width: 325px;
+  }
+  .makeCard__details {
+    width: 300px;
+  }
+  .makeCard__measures {
+    width: 300px;
+  }
+  .makeCard__buttons {
+    flex-direction: row;
+  }
 }

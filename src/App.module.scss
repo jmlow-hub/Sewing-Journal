@@ -8,7 +8,7 @@
   
 
     h1 {
-      height: 15vh;
+     
       font-family: $primary-font;
       color: $primary-color;
       font-size: 45px;
@@ -21,6 +21,9 @@
 .appMain {
   width: 100vw;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
   background: transparent;
   
   &__nav {
@@ -34,3 +37,4 @@
     justify-content: center;
   }
 }
+
