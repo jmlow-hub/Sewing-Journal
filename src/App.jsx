@@ -1,11 +1,34 @@
 import React from 'react'
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
+import { useState } from 'react'
 import JournalPage from './containers/JournalPage/';
 import NavBar from "./containers/NavBar";
 import PastMakes from "./containers/PastMakes";
 import styles from "./App.module.scss";
 
 const App = () => {
+
+    //state 
+    const [ journalEntry, setJournalEntry ] = useState({
+      id: "",
+      date: "",
+      designer: "",
+      pattern: "",
+      style: "",
+      size: "",
+      bust: "",
+      waist: "",
+      hips: "",
+      notes: ""
+    })
+  
+
+
+
+
+
+
+
   return (
 
     <Router>
@@ -20,7 +43,9 @@ const App = () => {
           <div className={styles.appMain__display}>
               <Switch>        
                 <Route exact path="/">
-                  <JournalPage />
+                  <JournalPage journalEntry={journalEntry}
+                               setJournalEntry={setJournalEntry}
+                  />
                 </Route>
 
                 <Route path="/pastmakes">

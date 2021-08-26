@@ -1,32 +1,17 @@
 import React from 'react'
-import { useState, useEffect  } from 'react';
-import CalendarInput from '../../components/CalendarInput';
-import NumberInput from '../../components/NumberInput/';
-import TextInput from '../../components/TextInput/';
-import Button from "../../components/Button";
+//import { useState, useEffect  } from 'react';
 import styles from "./JournalPage.module.scss";
-import TextArea from '../../components/TextArea/';
 
-const JournalPage = () => {
+
+const JournalPage = (props) => {
 
   //state 
-  const [ journalEntry, setJournalEntry ] = useState({
-    date: "",
-    designer: "",
-    pattern: "",
-    style: "",
-    size: "",
-    bust: "",
-    waist: "",
-    hips: "",
-    notes: ""
-  })
-
+  const { journalEntry, setJournalEntry } = props
 
   const postOptions = {
     method: 'POST',
-    headers: {"Content-type":"application/*+json"},
-    body: journalEntry
+    headers: {"Content-type": "application/json;charset=UTF-8"},
+    body: JSON.stringify(journalEntry)
   };
 
   const handleNewEntry = (e) => {
@@ -43,15 +28,6 @@ const JournalPage = () => {
     })
 
   }
-  
-
-
-
-    
-  
-
- 
-
 
 
   return (
