@@ -5,9 +5,7 @@ const EditMake = (props) => {
 
   const { journalEntry, setModal, setJournalEntry } = props
 
-  const handleModal = (e) => {
-    setModal(false)
-
+  const clearJournalEntry = () => {
     setJournalEntry({
       id: "",
       date: "",
@@ -20,6 +18,13 @@ const EditMake = (props) => {
       hips: "",
       notes: ""
     })
+  }
+
+  const handleModal = (e) => {
+    setModal(false)
+
+    clearJournalEntry();
+   
       }
 
   const putOptions = {
@@ -41,6 +46,10 @@ const EditMake = (props) => {
       .catch(error => {
           console.log(error)
         })
+
+        setModal(false)
+        clearJournalEntry();
+    
     
       }   
 

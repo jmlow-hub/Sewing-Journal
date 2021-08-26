@@ -11,6 +11,7 @@ const PastMakes = (props) => {
   const [ makes, setMakes ] = useState([]);
   const [ modal, setModal ] = useState(false);
 
+  // get request
   useEffect(() => {
 
     fetch("http://localhost:8080/makes")
@@ -23,10 +24,12 @@ const PastMakes = (props) => {
   }, [])
 
 
+  // put request
    const editHandler = (e) => {
-    e.preventDefault();
+     e.preventDefault()
+
     const makeId = e.target.id;  
-    const targetMake = makes.filter(m => m.id == makeId)       
+    const targetMake = makes.filter(m => m.id == makeId) 
     setJournalEntry({
       id: targetMake[0].id,
       date: targetMake[0].date,
@@ -38,9 +41,55 @@ const PastMakes = (props) => {
       waist: targetMake[0].waist,
       hips: targetMake[0].hips,
       notes: targetMake[0].notes
-    })   
+    })  
     setModal(true)
    }
+
+  //  delete request
+   const deleteOptions = {
+    method: 'DELETE',
+    headers: {"Content-type": "application/json;charset=UTF-8"},
+    body: JSON.stringify(journalEntry)
+  };
+
+  const deleteEntry = () => {
+   fetch("http://localhost:8080/make/"+journalEntry.id, deleteOptions  
+       )
+    .then(response => response.json())
+    .then(response => {
+        console.log(response)
+      })
+    .catch(error => {
+        console.log(error)
+      })
+  }
+
+    const deleteHandler = (e) => {
+      e.preventDefault();
+
+      const makeId = e.target.id; 
+      const targetMake = makes.filter(m => m.id == makeId)    
+      console.log(targetMake) 
+ 
+      setJournalEntry({
+        id: targetMake[0].id,
+        date: targetMake[0].date,
+        designer: targetMake[0].designer,
+        pattern: targetMake[0].pattern,
+        style: targetMake[0].style,
+        size: targetMake[0].size,
+        bust: targetMake[0].bust,
+        waist: targetMake[0].waist,
+        hips: targetMake[0].hips,
+        notes: targetMake[0].notes
+      })  
+      
+      deleteEntry();
+    
+   }
+
+
+  
 
     
 
@@ -58,6 +107,7 @@ const PastMakes = (props) => {
               hips={make.hips}
               notes={make.notes}
               clicked={editHandler}
+              deleteHandler={deleteHandler}
                             
               />
     })
