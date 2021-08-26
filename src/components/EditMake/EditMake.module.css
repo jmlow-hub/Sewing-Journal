@@ -1,16 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap");
-.journalPage {
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(254, 200, 67, 0.8);
+  z-index: 100;
+}
+
+.editMake {
   width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.journalPage .calendarInput {
+.editMake p {
+  align-self: flex-start;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: bold;
+}
+.editMake p:hover {
+  color: darkgray;
+  cursor: pointer;
+}
+.editMake .calendarInput {
   margin: 10px 10px 0 10px;
   display: flex;
   flex-direction: column;
 }
-.journalPage .calendarInput input {
+.editMake .calendarInput input {
   width: 300px;
   border: none;
   border-radius: 20px;
@@ -18,75 +40,75 @@
   background-color: ghostwhite;
   font-family: "Lato", sans-serif;
 }
-.journalPage .calendarInput label {
+.editMake .calendarInput label {
   padding: 5px;
   font-family: "Lato", sans-serif;
 }
-.journalPage .textInput {
+.editMake .textInput {
   display: flex;
   flex-direction: column;
   margin: 10px;
 }
-.journalPage .textInput h3 {
+.editMake .textInput h3 {
   margin: 5px;
   font-family: "Open-Sans", sans-serif;
 }
-.journalPage .textInput label {
+.editMake .textInput label {
   padding: 5px;
   font-family: "Lato", sans-serif;
 }
-.journalPage .textInput input {
+.editMake .textInput input {
   width: 300px;
   border: none;
   border-radius: 20px;
   padding: 10px;
   font-family: "Lato", sans-serif;
+  padding: 7px;
 }
-.journalPage .textInput label {
+.editMake .textInput label {
   padding: 5px;
   font-family: "Lato", sans-serif;
 }
-.journalPage .numberInput {
+.editMake .numberInput {
   display: flex;
   flex-direction: column;
   margin: 10px;
 }
-.journalPage .numberInput h3 {
+.editMake .numberInput h3 {
   margin: 5px;
   font-family: "Open-Sans", sans-serif;
 }
-.journalPage .numberInput__row {
+.editMake .numberInput__row {
   display: flex;
 }
-.journalPage .numberInput input {
+.editMake .numberInput input {
   width: 50px;
   border: none;
   border-radius: 20px;
   padding: 10px;
   font-family: "Lato", sans-serif;
 }
-.journalPage .numberInput label {
+.editMake .numberInput label {
   padding: 5px;
   font-family: "Lato", sans-serif;
   margin-right: 5px;
 }
-.journalPage .textArea {
+.editMake .textArea {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
-.journalPage label {
+.editMake label {
   padding: 5px;
   font-family: "Lato", sans-serif;
   margin-right: 5px;
 }
-.journalPage textarea {
+.editMake textarea {
   border-radius: 20px;
   border: none;
   font-family: "Lato", sans-serif;
-  padding: 7px;
 }
-.journalPage button {
+.editMake button {
   width: 150px;
   background-color: ghostwhite;
   padding: 10px;

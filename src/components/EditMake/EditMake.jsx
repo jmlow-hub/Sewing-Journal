@@ -3,18 +3,53 @@ import styles from "./EditMake.module.scss"
 
 const EditMake = (props) => {
 
-  const { journalEntry, modal, setModal, setJournalEntry } = props
+  const { journalEntry, setModal, setJournalEntry } = props
 
   const handleModal = (e) => {
     setModal(false)
-    // console.log(modal)
-  }
+
+    setJournalEntry({
+      id: "",
+      date: "",
+      designer: "",
+      pattern: "",
+      style: "",
+      size: "",
+      bust: "",
+      waist: "",
+      hips: "",
+      notes: ""
+    })
+      }
+
+  const putOptions = {
+        method: 'PUT',
+        headers: {"Content-type": "application/json;charset=UTF-8"},
+        body: JSON.stringify(journalEntry)
+      };
+
+  
+  const handleEditEntry = (e) => {
+      e.preventDefault();
+    
+      fetch("http://localhost:8080/make/"+journalEntry.id, putOptions  
+         )
+      .then(response => response.json())
+      .then(response => {
+          console.log(response)
+        })
+      .catch(error => {
+          console.log(error)
+        })
+    
+      }   
 
 
   return (
-    <div>
-      <p onClick={handleModal}>Close</p>
-      <form className={styles.editMake} >
+    <div className={styles.overlay}>
+      
+      <form className={styles.editMake} onSubmit={handleEditEntry}>
+         <p onClick={handleModal}>X Close</p>
          <div className={styles.calendarInput}>
           <label htmlFor="date">Date</label>
           <input type="date" id="date" value={journalEntry.date} onChange={e => setJournalEntry({...journalEntry, date: e.target.value})}/>          
