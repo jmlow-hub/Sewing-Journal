@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import MakeCard from "../../components/MakeCard";
 import styles from "./PastMakes.module.scss";
 
 const PastMakes = () => {
@@ -18,10 +19,24 @@ const PastMakes = () => {
   }, [])
 
 
+    const makeCard = makes && makes.map(make => {
+      return <MakeCard 
+              key={make.id}
+              date={make.date}
+              designer={make.designer}
+              pattern={make.pattern}
+              style={make.style}
+              size={make.size}
+              bust={make.bust}
+              waist={make.waist}
+              hips={make.hips}
+              notes={make.notes}
+              />
+    })
 
-  return (
+    return (
     <div className={styles.pastMakes}>
-      hello hello hello
+      {makeCard}
       
     </div>
   )
