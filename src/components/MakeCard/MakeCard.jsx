@@ -8,11 +8,15 @@ const MakeCard = (props) => {
   
   return (
     <div className={styles.makeCard}>
-      <div className={styles.makeCard__details}>
-        <p>Designer: {designer}</p>
-        <p>Pattern: {pattern}</p>
-        <p>Date made: {date}</p>
-        <p>Style: {style}</p>
+        <div className={styles.makeCard__details}>
+          <div className={styles.makeCard__details__title}>
+            <p>Designer: {designer}</p>
+            <p>Pattern: {pattern}</p>
+          </div>
+          <div className={styles.makeCard__details__text}>
+            <p>Date made: {date}</p>
+            <p>Style: {style}</p>
+          </div>      
       </div>
       <div className={styles.makeCard__measures}>
         <p>Size made: {size}</p>
