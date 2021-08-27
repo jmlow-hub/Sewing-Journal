@@ -27,7 +27,7 @@ const MakeCard = (props) => {
       </div>
       <div className={styles.makeCard__btns}>
         <button id={id} onClick={clicked}>Edit</button>
-        <button id={id} onClick={deleteHandler}>Delete</button>        
+        <button id={id} onClick={deleteHandler}>Del</button>        
       </div>
     </div>
   )

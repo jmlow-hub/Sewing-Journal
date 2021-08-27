@@ -121,3 +121,11 @@
   font-family: "Lato", sans-serif;
   font-weight: bold;
 }
+.editMake button:hover {
+  background-color: #FDC231;
+  color: ghostwhite;
+  border: 3px solid ghostwhite;
+  transition: 0.6s ease;
+  cursor: pointer;
+  box-shadow: 2px 2px 7px darkgray;
+}

@@ -7,9 +7,9 @@ const NavBar = () => {
     <div className={styles.navBar}>
       <ul>
         
-        <Link to="/"><button>Add a new make</button></Link>
+        <Link to="/" className={styles.navBar__link}><button>Add a new make</button></Link>
 
-        <Link to="/pastmakes"><button>Review wardrobe</button></Link>
+        <Link to="/pastmakes" className={styles.navBar__link}><button>Review wardrobe</button></Link>
       </ul>
       
     </div>

@@ -60,8 +60,29 @@
   height: 45px;
   border-radius: 50%;
   border: none;
+  font-weight: bold;
+}
+.makeCard__btns button:first-child {
+  background-color: #ffb703;
+  color: ghostwhite;
+  border: 3px solid ghostwhite;
+}
+.makeCard__btns button:first-child:hover {
   background-color: ghostwhite;
-  font-family: "Lato", sans-serif;
+  color: #ffb703;
+  border: 3px solid #ffb703;
+  transition: 0.6s ease;
+}
+.makeCard__btns button:last-child {
+  background-color: #dc2f02;
+  color: ghostwhite;
+  border: 3px solid ghostwhite;
+}
+.makeCard__btns button:last-child:hover {
+  background-color: ghostwhite;
+  color: #dc2f02;
+  border: 3px solid #dc2f02;
+  transition: 0.6s ease;
 }
 
 @media screen and (max-width: 1024px) {

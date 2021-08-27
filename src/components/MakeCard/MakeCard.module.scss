@@ -67,11 +67,54 @@
           height: 45px;
           border-radius: 50%;
           border: none;
-          background-color: $primary-color;
-          font-family: $secondary-font;
-          
+          font-weight: bold;
+         
         }
+
+        button:first-child {
+          background-color: #ffb703;
+          color: $primary-color;
+          border: 3px solid $primary-color;
+       
+        }
+
+        button:first-child:hover {
+          background-color: $primary-color;
+          color: #ffb703;
+          border: 3px solid #ffb703;
+          transition: 0.6s ease;
+        }
+
+        
+
+        button:last-child {
+          background-color: #dc2f02;
+          color: $primary-color;
+          border: 3px solid $primary-color;
+       
+        }
+
+        button:last-child:hover {
+          background-color: $primary-color;
+          color: #dc2f02;
+          border: 3px solid #dc2f02;
+          transition: 0.6s ease;
+
+        }
+        
+
+
+        
+
     }
+
+    
+  
+
+
+
+
+
     }
 
     @media screen and (max-width: 1024px) {
