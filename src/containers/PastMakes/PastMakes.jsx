@@ -11,18 +11,19 @@ const PastMakes = (props) => {
 
   const [ makes, setMakes ] = useState([]);
   const [ modal, setModal ] = useState(false);
+  const [ webAddress, setWebAddress ] = useState("http://localhost:8080/makes")
 
   // get request
   useEffect(() => {
 
-    fetch("http://localhost:8080/makes")
+    fetch(webAddress)
     .then(res => res.json())
     .then((data) => {
       setMakes(data)
       
     })
     .catch(err => console.log("unsuccessful"))
-  }, [])
+  }, [webAddress])
 
 
   // put request
@@ -120,7 +121,7 @@ const PastMakes = (props) => {
 
       <div className={styles.pastMakes}>
           <div className={styles.pastMakes__search}>
-            <SearchBar />
+            <SearchBar setWebAddress={setWebAddress} />
           </div>
 
           <div className={styles.pastMakes__list}>

@@ -4,12 +4,15 @@ import SearchPattern from '../../components/SearchPattern';
 import SearchStyle from '../../components/SearchStyle';
 import styles from "./SearchBar.module.scss";
 
-const SearchBar = () => {
+const SearchBar = ({setWebAddress}) => {
+
+
+
   return (
     <div className={styles.searchBar}>
-      <SearchDesign />
-      <SearchPattern />
-      <SearchStyle />
+      <SearchDesign setWebAddress={setWebAddress}/>
+      <SearchPattern setWebAddress={setWebAddress}/>
+      <SearchStyle setWebAddress={setWebAddress} />
       
     </div>
   )

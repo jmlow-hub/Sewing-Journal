@@ -14,17 +14,19 @@
 }
 
 .editMake {
-  width: 350px;
+  min-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgba(254,200,67);
+  border: 5px solid ghostwhite;
   border-radius: 20px;
 
     p {
       align-self: flex-start;
       font-family: $primary-font;
       font-weight: bold;
+      margin: 5px;
 
     }
     p:hover {
