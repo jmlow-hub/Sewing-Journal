@@ -1,19 +1,13 @@
 @import "../../variables";
 
-.textInput {
+.searchBox {
   display: flex;
   flex-direction: column;
   margin: 10px;
 
-  h3 {
-    margin: 5px;
-    font-family: $primary-font;
-  }
-
   label {
     padding: 5px;
     font-family: $secondary-font;
-
   }
 
 
@@ -23,13 +17,7 @@
     border-radius: 20px;
     padding: 10px;
     font-family: $secondary-font;
-
   }
 
-  label {
-    padding: 5px;
-    font-family: $secondary-font;
-
-  }
-
+ 
 }

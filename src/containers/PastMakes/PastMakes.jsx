@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import MakeCard from "../../components/MakeCard";
 import EditMake from "../../components/EditMake";
+import SearchBar from '../SearchBar/SearchBar';
 import styles from "./PastMakes.module.scss";
 
 const PastMakes = (props) => {
@@ -117,6 +118,9 @@ const PastMakes = (props) => {
 
     return (
     <div className={styles.pastMakes}>
+      <div className={styles.pastMakes__search}>
+        <SearchBar />
+      </div>
       {makeCard}
       
       {modal && <EditMake setModal={setModal} journalEntry={journalEntry} setJournalEntry={setJournalEntry}/>} 

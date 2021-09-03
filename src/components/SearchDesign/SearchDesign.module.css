@@ -1,25 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap");
-.textInput {
+.searchBox {
   display: flex;
   flex-direction: column;
   margin: 10px;
 }
-.textInput h3 {
-  margin: 5px;
-  font-family: "Open-Sans", sans-serif;
-}
-.textInput label {
+.searchBox label {
   padding: 5px;
   font-family: "Lato", sans-serif;
 }
-.textInput input {
+.searchBox input {
   width: 300px;
   border: none;
   border-radius: 20px;
   padding: 10px;
-  font-family: "Lato", sans-serif;
-}
-.textInput label {
-  padding: 5px;
   font-family: "Lato", sans-serif;
 }
