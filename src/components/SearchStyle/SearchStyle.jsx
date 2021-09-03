@@ -24,9 +24,12 @@ const SearchStyle = ({setWebAddress}) => {
   return (
 
       <div className={styles.searchBox}>
-          <label htmlFor="searchByStyle">Search by Style</label>
-          <input type="text" id="searchByStyle" name="searchByStyle" value={searchTerm} onChange={searchHandler} />
-          <button onClick={webHandler}>Go</button>
+          <label htmlFor="searchByStyle">Search Style</label>
+          <div className={styles.searchBox__inputs}>
+            <input type="text" id="searchByStyle" name="searchByStyle" value={searchTerm} onChange={searchHandler} />
+            <button onClick={webHandler}>Go</button>
+          </div>   
+          
       </div>      
     
   )

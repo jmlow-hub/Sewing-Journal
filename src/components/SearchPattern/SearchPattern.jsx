@@ -22,9 +22,12 @@ const SearchPattern = ({setWebAddress}) => {
   return (
 
       <div className={styles.searchBox}>
-          <label htmlFor="searchByPattern">Search by Pattern</label>
-          <input type="text" id="searchByPattern" name="searchByPattern" value={searchTerm} onChange={searchHandler} />
-          <button onClick={webHandler}>Go</button>
+          <label htmlFor="searchByPattern">Search Pattern</label>
+            <div className={styles.searchBox__inputs}>
+              <input type="text" id="searchByPattern" name="searchByPattern" value={searchTerm} onChange={searchHandler} />
+              <button onClick={webHandler}>Go</button>     
+            </div>
+         
       </div>      
     
   )
