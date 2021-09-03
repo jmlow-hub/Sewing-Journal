@@ -49,8 +49,8 @@ const EditMake = (props) => {
 
         setModal(false)
         clearJournalEntry();
-    
-    
+
+         
       }   
 
 

@@ -53,6 +53,7 @@ const PastMakes = (props) => {
   };
 
   const deleteEntry = () => {
+      
    fetch("http://localhost:8080/make/"+journalEntry.id, deleteOptions  
        )
     .then(response => response.json())
@@ -62,7 +63,8 @@ const PastMakes = (props) => {
     .catch(error => {
         console.log(error)
       })
-  }
+
+    }
 
     const deleteHandler = (e) => {
       e.preventDefault();
@@ -84,8 +86,8 @@ const PastMakes = (props) => {
         notes: targetMake[0].notes
       })  
       
-      deleteEntry();
-    
+        deleteEntry();
+      
    }
 
 
