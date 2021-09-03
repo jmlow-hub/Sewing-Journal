@@ -3,3 +3,6 @@
   flex-direction: column;
   align-items: center;
 }
+.pastMakes__list {
+  min-width: 300px;
+}

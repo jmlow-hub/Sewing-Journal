@@ -117,15 +117,19 @@ const PastMakes = (props) => {
 
 
     return (
-    <div className={styles.pastMakes}>
-      <div className={styles.pastMakes__search}>
-        <SearchBar />
+
+      <div className={styles.pastMakes}>
+          <div className={styles.pastMakes__search}>
+            <SearchBar />
+          </div>
+
+          <div className={styles.pastMakes__list}>
+            {makeCard}
+            
+            {modal && <EditMake setModal={setModal} journalEntry={journalEntry} setJournalEntry={setJournalEntry}/>} 
+          </div>
       </div>
-      {makeCard}
       
-      {modal && <EditMake setModal={setModal} journalEntry={journalEntry} setJournalEntry={setJournalEntry}/>} 
-      
-    </div>
   )
 
 }

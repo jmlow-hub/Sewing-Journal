@@ -76,15 +76,15 @@
   font-family: "Lato", sans-serif;
 }
 .makeCard__btns {
+  width: 200px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   margin: 10px;
   padding: 10px;
 }
 .makeCard__btns button {
-  width: 45px;
-  height: 45px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   border: none;
   font-weight: bold;

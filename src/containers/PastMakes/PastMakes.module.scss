@@ -3,4 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &__list {
+    min-width: 300px;
+  }
+
+
 }
