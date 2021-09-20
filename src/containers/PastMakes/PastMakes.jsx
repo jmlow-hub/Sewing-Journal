@@ -11,7 +11,7 @@ const PastMakes = (props) => {
 
   const [ makes, setMakes ] = useState([]);
   const [ modal, setModal ] = useState(false);
-  const [ webAddress, setWebAddress ] = useState("http://localhost:8080/makes")
+  const [ webAddress, setWebAddress ] = useState("https://sewing-journal.herokuapp.com/makes")
 
   // get request
   useEffect(() => {
@@ -56,7 +56,7 @@ const PastMakes = (props) => {
 
   const deleteEntry = () => {
       
-   fetch("http://localhost:8080/make/"+journalEntry.id, deleteOptions  
+   fetch("https://sewing-journal.herokuapp.com/make/"+journalEntry.id, deleteOptions  
        )
     .then(response => response.json())
     .then(response => {
@@ -89,6 +89,8 @@ const PastMakes = (props) => {
       })  
       
         deleteEntry();
+
+        window.location.reload();
       
    }
 

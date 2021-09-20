@@ -17,7 +17,7 @@ const JournalPage = (props) => {
   const handleNewEntry = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:8080/make", postOptions  
+    fetch("https://sewing-journal.herokuapp.com/make", postOptions  
      )
     .then(response => response.json())
     .then(response => {
@@ -26,6 +26,8 @@ const JournalPage = (props) => {
     .catch(error => {
       console.log(error)
     })
+
+    window.location.reload();
 
   }
 

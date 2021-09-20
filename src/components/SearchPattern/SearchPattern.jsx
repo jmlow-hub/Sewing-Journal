@@ -14,7 +14,7 @@ const SearchPattern = ({setWebAddress}) => {
 
   //function to change web address for Fetch
   const webHandler = (e) => {
-  setWebAddress("http://localhost:8080/makes/pattern?pattern="+searchTerm)
+  setWebAddress("https://sewing-journal.herokuapp.com/makes/pattern?pattern="+searchTerm)
   setSearchTerm("")
   }
 
