@@ -27,8 +27,7 @@ const JournalPage = (props) => {
       console.log(error)
     })
 
-    window.location.reload();
-
+  
   }
 
 

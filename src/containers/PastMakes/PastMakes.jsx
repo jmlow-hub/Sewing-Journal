@@ -31,7 +31,7 @@ const PastMakes = (props) => {
      e.preventDefault()
 
     const makeId = e.target.id;  
-    const targetMake = makes.filter(m => m.id == makeId) 
+    const targetMake = makes.filter(m => m.id === makeId) 
     setJournalEntry({
       id: targetMake[0].id,
       date: targetMake[0].date,
@@ -72,7 +72,7 @@ const PastMakes = (props) => {
       e.preventDefault();
 
       const makeId = e.target.id; 
-      const targetMake = makes.filter(m => m.id == makeId)    
+      const targetMake = makes.filter(m => m.id === makeId)    
       console.log(targetMake) 
  
       setJournalEntry({
@@ -90,7 +90,7 @@ const PastMakes = (props) => {
       
         deleteEntry();
 
-        window.location.reload();
+      
       
    }
 
